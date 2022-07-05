@@ -2,15 +2,18 @@ import { initializeApp } from "firebase/app"
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, updateProfile } from "firebase/auth"
 import { getFirestore } from "firebase/firestore"
 import { readFileSync } from "fs"
+import dotenv from "dotenv"
+dotenv.config();
+
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDml6heZ2LIH-QbX_uqRNAX41dSfbm-W38",
-  authDomain: "darkchat-338d3.firebaseapp.com",
-  projectId: "darkchat-338d3",
-  storageBucket: "darkchat-338d3.appspot.com",
-  messagingSenderId: "411139723213",
-  appId: "1:411139723213:web:8804a7c80825395e787e84",
-  measurementId: "G-YPKV5X5375"
+  apiKey: process.env.apiKey,
+  authDomain: process.env.authDomain,
+  projectId: process.env.projectId,
+  storageBucket: process.env.storageBucket,
+  messagingSenderId: process.env.messagingSenderId,
+  appId: process.env.appId,
+  measurementId: process.env.measurementId
 };
 
 const app = initializeApp(firebaseConfig);

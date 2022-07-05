@@ -10,6 +10,7 @@
     "chalk-animation": "^2.0.2",
     "cli-spinner": "^0.2.10",
     "cli-spinners": "^2.6.1",
+    "dotenv": "^16.0.1",
     "figlet": "^1.5.2",
     "firebase": "^9.8.4",
     "firebase-admin": "^11.0.0",
